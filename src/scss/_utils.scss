@@ -1,0 +1,31 @@
+.container {
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding-inline: var(--container-padding-x);
+  @include tablet {
+    --container-padding-x: 60px;
+  }
+  @include mobile {
+    --container-padding-x: 40px;
+  }
+}
+
+.visually-hidden {
+  @include visually-hidden;
+}
+
+.hidden-mobile {
+  @include mobile {
+    display: none !important;
+  }
+}
+
+.visible-mobile {
+  @include mobile-above {
+    display: none !important;
+  }
+}
+
+.hidden {
+  display: none !important;
+}

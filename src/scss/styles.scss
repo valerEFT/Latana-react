@@ -1,0 +1,10 @@
+@import "normalize";
+@import "fonts";
+@import "mixins";
+@import "variables";
+@import "media";
+@import "globals";
+@import "utils";
+
+@import "./blocks/header", "./blocks/latest-news", "./blocks/Pagination",
+  "./blocks/footer", "./blocks/burger-container";

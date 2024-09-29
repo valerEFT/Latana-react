@@ -1,0 +1,70 @@
+.footer {
+  background-color: #000;
+  max-width: 1440px;
+  width: 100%;
+  margin-top: 120px;
+  height: 240px;
+  border-radius: var(--border-radius);
+
+  &__item-title {
+    color: var(--color-light);
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+  }
+  &__media {
+    display: flex;
+    margin-top: 32px;
+    gap: 16px;
+  }
+
+  &__nav {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 40px;
+  }
+  &__link {
+    color: var(--color-light);
+    opacity: 0.7;
+    &-title {
+      color: var(--color-light);
+      &:hover {
+        color: var(--color-light);
+      }
+    }
+  }
+  &__label {
+    color: var(--color-light);
+  }
+  &__input {
+    margin-top: 16px;
+    background-color: transparent;
+    max-width: 282px;
+    width: 100%;
+    height: 30px;
+    color: var(--color-light);
+    position: relative;
+    @include reset-button;
+    border-bottom: 2px solid var(--color-gray);
+    outline: none;
+  }
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  &__button {
+    @include reset-button;
+    position: absolute;
+    top: 12px;
+    right: 0;
+    z-index: 99999999999212121219999999;
+    width: 10px;
+    height: 12px;
+  }
+  &__wrapper {
+    position: relative;
+  }
+}
